@@ -1,5 +1,7 @@
 package utility;
 
+import java.io.File;
+
 public class Constant 
 
 {
@@ -8,9 +10,14 @@ public class Constant
 	public static final String Username = "ladu190788@gmail.com";
 	 
     public static final String Password ="1qaz2WSX";
-	public static final String Path_TestData="C:\\flip\\";
+
+    static File resourcesDirectory = new File("flip_data.xlsx");
+    static String fullPath=resourcesDirectory.getAbsolutePath();
+	public static final String Path_TestData_old=fullPath.substring(0,fullPath.lastIndexOf(File.separator)+1);
+	public static final String Path_TestData=Path_TestData_old.replace("\\", "\\\\");
 	public static final String File_TestData="flip_data.xlsx";
-	
+    
+    
 	public static final int Col_TestCaseName = 0;	
 	 
 	public static final int Col_UserName=1;
