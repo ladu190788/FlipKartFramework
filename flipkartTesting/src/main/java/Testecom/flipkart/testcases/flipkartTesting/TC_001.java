@@ -59,7 +59,7 @@ public class TC_001
 		
 		SignOut_Action.signOutExecute();
 	
-		System.out.println("Change from ladu");
+		
 	}
 	
 	@AfterMethod

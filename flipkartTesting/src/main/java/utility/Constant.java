@@ -28,7 +28,13 @@ public class Constant
 	
 	public static final int Col_saerchItem=4;
 	
-	public static final int Col_Result=5;
+	public static final int Col_Product_Category=5;
+	
+	public static final int Col_Product_Subcategory=6;
+	
+	public static final int Col_Exact_Product_Name=7;
+	
+	public static final int Col_Result=8;
 	
 	
 }

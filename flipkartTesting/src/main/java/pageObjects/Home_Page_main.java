@@ -8,6 +8,7 @@ public class Home_Page_main extends BaseClass
 {
 	
 	   private static WebElement element = null;
+	   
 	public Home_Page_main(WebDriver driver)
 	{
 		super(driver);
@@ -77,7 +78,8 @@ public class Home_Page_main extends BaseClass
 		 try
 		 {
 			 element=driver.findElement(By.xpath("//input[@value='SEARCH']"));
-			 
+			
+			//input[@value='SEARCH']
 			 
 			 
 		 }catch(Exception e)
@@ -88,11 +90,11 @@ public class Home_Page_main extends BaseClass
 		 return element;
 	 }
 	 
-	 public static void search_AnItem(WebElement toSearch, String searchText)
+	 public static void search_AnItem(WebElement SearchButton, String searchText)
 	 {
 		 
 		 driver.findElement(By.xpath("//input[@name='q' and @placeholder='So, what are you wishing for today?']")).sendKeys(searchText);
-		 toSearch.click();
+		 SearchButton.click();
 	 }
 
 }

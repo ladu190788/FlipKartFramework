@@ -15,7 +15,9 @@ public class Utils
 
 	public static WebDriver driver=null;
 	
-	 public static void mouseHoverAction(WebElement mainElement, String subElement)
+	public static WebElement subElementToClick;
+	
+	 public static WebElement mouseHoverAction(WebElement mainElement, String subElement)
 	 {
 		 
 		 Actions action =new Actions(driver);
@@ -26,10 +28,15 @@ public class Utils
 			 
 			 //action.moveToElement(driver.findElement(By.xpath("//a[text()='Logout']"))).perform();
 			 
-			 driver.findElement(By.xpath("//a[text()='Log Out']")).click();
+			 WebElement subElementToClick=driver.findElement(By.xpath("//a[text()='Log Out']"));
+			 
+			 return subElementToClick;
 			 
 			 
 		 }
+		 
+		 else
+		 return null;
 		 
 		 
 	 }

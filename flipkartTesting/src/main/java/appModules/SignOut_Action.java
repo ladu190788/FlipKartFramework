@@ -9,7 +9,7 @@ public class SignOut_Action
 {
 	public static void signOutExecute() throws Exception
 	{
-		Utils.mouseHoverAction(Home_Page_main.lnk_MyAccount(),"Logout");
+		Utils.mouseHoverAction(Home_Page_main.lnk_MyAccount(),"Logout").click();
 
 	}
 }
