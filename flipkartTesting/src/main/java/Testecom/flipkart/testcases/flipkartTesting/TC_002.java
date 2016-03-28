@@ -73,7 +73,7 @@ public class TC_002
 			System.out.println("THe userITem is : "+UserItem.getText());
 			
 			
-			String UserItemPrice=driver.findElement(By.xpath("//div[div[a[contains(text(),"+"'"+GetUserItem+"'"+")]]]/div//span[contains(text(),'Rs.')]")).getText();
+			String UserItemPrice=driver.findElement(By.xpath("//div[div[a[contains(text(),"+"'"+GetUserItem+"'"+")]]]/div//div[@class='pu-final']/span[contains(text(),'Rs.')]")).getText();
 			
 			System.out.println("The UserItemPrice is : "+UserItemPrice);
 			

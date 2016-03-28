@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="none">
   <test name="Test">
     <classes>
-      <class name="Testecom.flipkart.testcases.flipkartTesting.TC_001"/>
+      <!--  <class name="Testecom.flipkart.testcases.flipkartTesting.TC_001"/>-->
       <class name="Testecom.flipkart.testcases.flipkartTesting.TC_002"/>
     </classes>
   </test> <!-- Test -->
