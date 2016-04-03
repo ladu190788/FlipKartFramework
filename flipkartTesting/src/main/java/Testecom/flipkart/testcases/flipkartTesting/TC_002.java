@@ -41,6 +41,12 @@ public class TC_002
 			driver=Utils.OpenBrowser(iTestCaseRow);
 			
 			new BaseClass(driver);
+			
+			int j=0;
+			for(j=0;j<10;j++)
+			{
+				System.out.println("The value of j is : "+j);
+			}
 					
 		}
 		
